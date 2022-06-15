@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>
-	안녕하세요 세계! 
+	 반갑습니다 World! 
 </h1>
 
 <P>  서버의 시간은 ${serverTime}. 입니다.</P>
