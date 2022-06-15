@@ -42,13 +42,13 @@
                                 </tbody>
                             </table>
                             <c:if test="${pageMaker.prev}">
-                            	<a href="/board/list?pageNum=${pageMaker.startPage-1}&amount=${pageMaker.cri.amount}"> << </a>
+                            	<a href="/board/list?pageNum=${pageMaker.startPage-1}&amount=${pageMaker.cri.amount}"> prev </a>
                             </c:if>
 <c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="num">
 	<a href="/board/list?pageNum=${num}&amount=${pageMaker.cri.amount}">${num}</a> &nbsp;&nbsp;&nbsp;&nbsp;
 </c:forEach>
                             <c:if test="${pageMaker.next}">
-                            	<a href="/board/list?pageNum=${pageMaker.endPage+1}&amount=${pageMaker.cri.amount}"> >> </a>
+                            	<a href="/board/list?pageNum=${pageMaker.endPage+1}&amount=${pageMaker.cri.amount}"> next </a>
                             </c:if> 
                         <!-- /.panel-body -->
                     </div>
